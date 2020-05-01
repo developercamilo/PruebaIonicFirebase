@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "705774139635",
+    "firebase_url": "https://prueba-8b8f5.firebaseio.com",
+    "project_id": "prueba-8b8f5",
+    "storage_bucket": "prueba-8b8f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705774139635:android:b659a98e6502791ddf5f86",
+        "android_client_info": {
+          "package_name": "com.djamware.ionicfcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705774139635-tuc7h0vdbjvuoooakqophl9ohg9l47ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxciixQZ2cVivkJFPo4THSdfEuiWR4dfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705774139635-tuc7h0vdbjvuoooakqophl9ohg9l47ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
