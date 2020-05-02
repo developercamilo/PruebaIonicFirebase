@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FCM } from '@ionic-native/fcm/ngx';
 import { ServicioCrudService } from "../servicios/servicio-crud.service";
 import { Data } from "../data/data";
+import { LocalNotifications, ELocalNotificationTriggerUnit } from '@ionic-native/local-notifications/ngx';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -10,7 +11,8 @@ import { Data } from "../data/data";
 })
 export class HomePage implements OnInit{
   Usuarios = [];
-  constructor(private fcm:FCM, private servicio:ServicioCrudService) {}
+  constructor(private fcm:FCM, private servicio:ServicioCrudService,
+    private localNotifications: LocalNotifications) {}
 
   ngOnInit(){
     this.fcm.getToken().then(token => {
@@ -40,4 +42,16 @@ export class HomePage implements OnInit{
       this.servicio.deleteUser(id)
     }
   }
+
+  registerNotification(seconds: number) {
+    this.localNotifications.schedule({
+      title: `my ${seconds} notification`,
+      text: `my detailed description`,
+      trigger: {
+        in: seconds,
+        unit: ELocalNotificationTriggerUnit.SECOND,
+      },
+    });
+  }
+  
 }

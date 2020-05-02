@@ -18,6 +18,10 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
+import { ImagePicker } from "@ionic-native/image-picker/ngx";
+import { File } from "@ionic-native/file/ngx";
+
+import { LocalNotifications } from "@ionic-native/local-notifications/ngx";
 // environment
 import { environment } from '../environments/environment';
 
@@ -32,6 +36,9 @@ import { environment } from '../environments/environment';
   AngularFireDatabaseModule,
   AngularFireStorageModule],
   providers: [
+    ImagePicker,
+    LocalNotifications,
+    File,
     FCM,
     StatusBar,
     SplashScreen,

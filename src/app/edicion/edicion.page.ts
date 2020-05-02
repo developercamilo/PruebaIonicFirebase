@@ -24,9 +24,9 @@ export class EdicionPage implements OnInit {
 
   ngOnInit() {
     this.updateListForm = this.fb.group({
-      descripcion: [''],
-      nombre: [''],
-      imagen: ['']
+      Descripcion: [''],
+      Nombre: [''],
+      Imagen: ['']
     })
     console.log(this.updateListForm.value)
   }

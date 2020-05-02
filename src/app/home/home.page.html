@@ -18,10 +18,14 @@
           <ion-icon name="person"></ion-icon> {{Usuarios.Descripcion}}
         </h5>
         <p>
-          <ion-icon name="call"></ion-icon> {{Usuarios.Nombre}}
+          <ion-icon name=""></ion-icon> {{Usuarios.Nombre}}
         </p>
+        <p>
+          <ion-icon name=""></ion-icon> {{Usuarios.Imagen}}
+        </p>
+        
       </ion-label>
-
+      
       <div class="item-note" item-end>
         <button ion-button clear [routerLink]="['/edicion/', Usuarios.$key]">
           <ion-icon name="create" style="zoom:2.0"></ion-icon>
@@ -31,4 +35,7 @@
         </button>
       </div>
     </ion-item>
+    
+      <ion-button (click)="registerNotification(3)">Notificacion</ion-button>
+    
   </ion-list>
